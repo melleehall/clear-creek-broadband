@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+.eighty-percent {
+    width: 80%;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
