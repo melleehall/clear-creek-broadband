@@ -1,91 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link rel='stylesheet' type='text/css' href='//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css'>
     <title>Clear Creek Broadband</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel='stylesheet' type='text/css' href='main.css'>
 </head>
 <body>
-    <nav role="navigation">
-        Navigation Bar
-    </nav>
-    <main class='flex-col eighty-percent'>
+    <div class='topnav'>
+        <a href='#home' class='darkgray'>Clear Creek Broadband</a>
+        <div id='myLinks'>
+            <a href='#home' id='home'>Home</a>
+            <a href='#signup' id='signup'>Signup</a>
+            <a href='#billing' id='billing'>Billing</a>
+            <a href='#service-desk' id='service-desk'>Service Desk</a>
+            <a href='#contact' id='contact'>Contact</a>
+        </div>
+        <a href='javascript:void(0);' class='menu' onclick='myFunction()'>
+          <i class='fa fa-bars'>menu</i>
+        </a>
+    </div>
+
+    <main>
+    <div class='eighty-percent flex-col'>
         <section class='landing-view flex-col'>
             <section class='flex-col'>
-                <h1>Clear Creek Broadband</h1>
-                <p>Write an intriguing summary of what your company does.</p>
+                <h1 class='gray'>Clear Creek Broadband</h1>
+                <p class='lightestgray'>Write an intriguing summary of what your company does.</p>
             </section>
             <section>
-                <h2>Network Status</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h2 class='lightgray'>Network Status</h2>
+                <p class='lightestgray'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </section>
         </section>
         <section class='signup-view'>
             <section>
-                <h1>Hi, Clear Creek Resident! Ready for faster internet?</h1>
-                <p>Sign up and pay for service today to save 25% on your first year of service! Not ready to commit? Stay in-the-know by opting in for network status updates.</p>
+                <h1 class='gray'>Hi, Clear Creek Resident! Ready for faster internet?</h1>
+                <p class='lightestgray'>Sign up and pay for service today to save 25% on your first year of service! Not ready to commit? Stay in-the-know by opting in for network status updates.</p>
             </section>
             <section>
-                <h2>Signup Form</h2>
+                <h2 class='lightgray'>Signup Form</h2>
                 <form class='signup-form'>
                     <fieldset class='personal-info flex-col'>
                     <legend>Please, Enter Your Information</legend>
                         <div>
-                            <label for='first-name'>
+                            <label for='first-name-one'>
                                 First Name
                             </label>
                             <input 
                                 placeholder='First Name'
                                 type='text'
-                                name='first-name'
-                                id='first-name'
+                                name='first-name-one'
+                                id='first-name-one'
                             />
                         </div>
                         <div>
-                            <label for='last-name'>
+                            <label for='last-name-one'>
                                 Last Name
                             </label>
                             <input 
                                 placeholder='Last Name'
                                 type='text'
-                                name='last-name'
-                                id='last-name'
+                                name='last-name-one'
+                                id='last-name-one'
                             />
                         </div>  
                         <div>
-                            <label for='email-address'>
+                            <label for='email-address-one'>
                                 Email
                             </label>
                             <input 
                                 placeholder='abc123@email.com'
                                 type='email'
-                                name='email-address'
-                                id='email-address'
+                                name='email-address-one'
+                                id='email-address-one'
                             />
                         </div>
                         <div>
-                            <label for='phone-number'>
+                            <label for='phone-number-one'>
                                 Phone
                             </label>
                             <input 
                                 placeholder='303-987-6543'
                                 type='tel'
-                                name='phone-number'
-                                id='phone-number'
+                                name='phone-number-one'
+                                id='phone-number-one'
                             />
                         </div>
                         <div>
-                            <label for='home-address'>
+                            <label for='home-address-one'>
                                 Service Address
                             </label>
                             <input 
                                 placeholder='Clear Creek, CO'
                                 type='tel'
-                                name='home-address'
-                                id='home-address'
+                                name='home-address-one'
+                                id='home-address-one'
                             />
                         </div>
                     </fieldset>
@@ -117,77 +129,77 @@
         </section>
         <section class='billing-view'>
             <section>
-                <h1>Pay & check your balance at Bill.com</h1>
-                <p>Directions for creating and managing Bill.com Account, checking balance, paying, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Link to Bill.com.</p>
+                <h1 class='gray'>Pay & check your balance at Bill.com</h1>
+                <p class='lightestgray'>Directions for creating and managing Bill.com Account, checking balance, paying, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Link to Bill.com.</p>
             </section>
             <section>
-                <h2>Also include contact info in case of billing issues</h2>
-                <ul>
-                    <li>Name: </li>
-                    <li>Email: </li>
-                    <li>Phone: </li>
+                <h2 class='lightgray'>Contact info in case of billing issues</h2>
+                <ul class='lightestgray'>
+                    <li>Name: Clear Creek Smith</li>
+                    <li>Email: hellobilling@ccb.net</li>
+                    <li>Phone: 303-765-4321</li>
                 </ul>
             </section>
         </section>
-        <section class='Support-View'>
+        <section class='support-view'>
             <section>
-                <h1>Need some help? We're here for you.</h1>
+                <h1 class='gray'>Need some help? We're here for you.</h1>
                 <form class='zendesk-form'>
                     <fieldset class='personal-info flex-col'>
                         <legend>Service Request Form - Generate ticket in Zendesk</legend>
                             <div>
-                                <label for='first-name'>
+                                <label for='first-name-two'>
                                     First Name
                                 </label>
                                 <input 
                                     placeholder='First Name'
                                     type='text'
-                                    name='first-name'
-                                    id='first-name'
+                                    name='first-name-two'
+                                    id='first-name-two'
                                 />
                             </div>
                             <div>
-                                <label for='last-name'>
+                                <label for='last-name-two'>
                                     Last Name
                                 </label>
                                 <input 
                                     placeholder='Last Name'
                                     type='text'
-                                    name='last-name'
-                                    id='last-name'
+                                    name='last-name-two'
+                                    id='last-name-two'
                                 />
                             </div>  
                             <div>
-                                <label for='email-address'>
+                                <label for='email-address-two'>
                                     Email
                                 </label>
                                 <input 
                                     placeholder='abc123@email.com'
                                     type='email'
-                                    name='email-address'
-                                    id='email-address'
+                                    name='email-address-two'
+                                    id='email-address-two'
                                 />
                             </div>
                             <div>
-                                <label for='phone-number'>
+                                <label for='phone-number-two'>
                                     Phone
                                 </label>
                                 <input 
                                     placeholder='303-987-6543'
                                     type='tel'
-                                    name='phone-number'
-                                    id='phone-number'
+                                    name='phone-number-two'
+                                    id='phone-number-two'
                                 />
                             </div>
                             <div>
-                                <label for='home-address'>
+                                <label for='home-address-two'>
                                     Service Address
                                 </label>
                                 <input 
                                     placeholder='Clear Creek, CO'
                                     type='tel'
-                                    name='home-address'
-                                    id='home-address'
+                                    name='home-address-two'
+                                    id='home-address-two'
                                 />
                             </div>
                             <div>
@@ -203,7 +215,7 @@
                             </div>
                         </fieldset>
                 </form>
-                <p>
+                <p class='lightestgray'>
                     Please, be as detailed as possible regarding the issue you are experiencing.
                     A support agent for CCB will contact you within 24 hours. If you need to 
                     provide an update, email Zendesk with your assigned Ticket ID # as the subject.
@@ -211,25 +223,39 @@
             </section>
         </section>
         <section class='contact-view'>
-            <h1>Contact Us</h1>
+            <h1 class='gray'>Contact Us</h1>
             <section class='customer-contact'>
-                <h2>Customer Support</h2>
-                <ul>
+                <h2 class='lightgray'>Customer Support</h2>
+                <ul class='lightestgray'>
                     <li>Email: hellocustomer@ccb.net</li>
                     <li>Phone: 303-765-4321</li>
                 </ul>
             </section>
             <section class='press-contact'>
-                <h2>Press</h2>
-                <ul>
+                <h2 class='lightgray'>Press</h2>
+                <ul class='lightestgray'>
                     <li>Email: hellopress@ccb.net</li>
                     <li>Phone: 303-123-4567</li>
                 </ul>
             </section>
         </section>
+    </div>
     </main>
     <footer>
         Copyright Info
     </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById('myLinks');
+          if (x.style.display === 'block') {
+            x.style.display = 'none';
+          } else {
+            x.style.display = 'block';
+          }
+        }
+        </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
