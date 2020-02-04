@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='main.css'>
 </head>
-<body>
+<body class='flex-col'>
     <nav>
         <div class='topnav-mobile'>
             <a href='#home' class='darkgray'>Clear Creek Broadband</a>
@@ -41,22 +41,28 @@
         <section class='landing-view flex-col'>
             <section class='flex-col'>
                 <h1 class='gray'>Clear Creek Broadband</h1>
-                <p class='lightestgray'>
+            <div class='flex-row'>
+                <p class='summary lightestgray'>
                     Write an intriguing summary about what your company does. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
+                <div class='image-placeholder darkgray hidden flex-row'> <div>image</div> </div>
+            </div>
             </section>
             <section>
                 <h2 class='lightgray'>Network Status</h2>
-                <p class='lightestgray'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class=flex-row>
+                    <div class='image-placeholder darkgray hidden flex-row'> <div>image</div> </div>
+                    <p class='lightestgray summary'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
             </section>
         </section>
         <section class='signup-view'>
             <section>
                 <h1 class='gray'>Hi, Clear Creek Resident! Ready for faster internet?</h1>
-                <p class='lightestgray'>Sign up and pay for service today to save 25% on your first year of service! Not ready to commit? Stay in-the-know by opting in for network status updates.</p>
+                <p class='lightestgray signup-content'>Sign up and pay for service today to save 25% on your first year of service! Not ready to commit? Stay in-the-know by opting in for network status updates.</p>
             </section>
-            <section>
+            <section class='signup-form-wrapper'>
                 <h2 class='lightgray'>Signup Form</h2>
                 <form class='signup-form'>
                     <fieldset class='personal-info flex-col darkgray'>                        <div class='form-item'>
@@ -143,7 +149,10 @@
         <section class='billing-view'>
             <section>
                 <h1 class='gray'>Pay & check your balance at Bill.com</h1>
-                <p class='lightestgray'>Directions for creating and managing Bill.com Account, checking balance, paying, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Link to Bill.com.</p>
+                <div class='flex-row'>
+                    <p class='lightestgray summary'>Directions for creating and managing Bill.com Account, checking balance, paying, etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Link to Bill.com.</p>
+                    <div class='image-placeholder darkgray hidden flex-row'> <div>image</div> </div>
+                </div>
             </section>
             <section>
                 <h2 class='lightgray'>Contact info in case of billing issues</h2>
@@ -228,7 +237,7 @@
                             </div>
                         </fieldset>
                 </form>
-                <p class='lightestgray'>
+                <p class='lightestgray service-form-content'>
                     Please, be as detailed as possible regarding the issue you are experiencing.
                     A support agent for CCB will contact you within 24 hours. If you need to 
                     provide an update, email Zendesk with your assigned Ticket ID # as the subject.
@@ -261,11 +270,8 @@
         </section>
     </div>
     </main>
-    <footer>
-        <div class='copyright darkgray'>
-            <small>Copyright 2020</small>
-        </div>
-    </footer>
+    </div>
+    <footer class='placeholder'> </footer>
     <script>
         function myFunction() {
           var x = document.getElementById('myLinks');
