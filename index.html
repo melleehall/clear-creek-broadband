@@ -6,6 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <link rel='stylesheet' type='text/css' href='//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css'>
     <title>Clear Creek Broadband</title>
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='main.css'>
 </head>
 <body>
@@ -43,9 +44,7 @@
             <section>
                 <h2 class='lightgray'>Signup Form</h2>
                 <form class='signup-form'>
-                    <fieldset class='personal-info flex-col'>
-                    <legend>Please, Enter Your Information</legend>
-                        <div>
+                    <fieldset class='personal-info flex-col darkgray'>                        <div class='form-item'>
                             <label for='first-name-one'>
                                 First Name
                             </label>
@@ -56,7 +55,7 @@
                                 id='first-name-one'
                             />
                         </div>
-                        <div>
+                        <div class='form-item'>
                             <label for='last-name-one'>
                                 Last Name
                             </label>
@@ -67,7 +66,7 @@
                                 id='last-name-one'
                             />
                         </div>  
-                        <div>
+                        <div class='form-item'>
                             <label for='email-address-one'>
                                 Email
                             </label>
@@ -78,7 +77,7 @@
                                 id='email-address-one'
                             />
                         </div>
-                        <div>
+                        <div class='form-item'>
                             <label for='phone-number-one'>
                                 Phone
                             </label>
@@ -89,7 +88,7 @@
                                 id='phone-number-one'
                             />
                         </div>
-                        <div>
+                        <div class='form-item'>
                             <label for='home-address-one'>
                                 Service Address
                             </label>
@@ -101,9 +100,8 @@
                             />
                         </div>
                     </fieldset>
-                    <fieldset class='user-selections flex-col'>
-                    <legend>Opt In For Service and/or Updates</legend>
-                        <div>
+                    <fieldset class='user-selections flex-col darkgray'>
+                        <div class='form-item'>
                             <input 
                                 type='checkbox'
                                 name='early-subscriber'
@@ -113,7 +111,7 @@
                                 Option to be an Early Subscriber
                             </label>
                         </div>
-                        <div>
+                        <div class='form-item'>
                             <input 
                                 type='checkbox'
                                 name='updates'
@@ -145,9 +143,9 @@
             <section>
                 <h1 class='gray'>Need some help? We're here for you.</h1>
                 <form class='zendesk-form'>
-                    <fieldset class='personal-info flex-col'>
-                        <legend>Service Request Form - Generate ticket in Zendesk</legend>
-                            <div>
+                    <legend class='darkgray'>Service Request Form (Zendesk)</legend>
+                    <fieldset class='personal-info flex-col darkgray'>
+                            <div class='form-item'>
                                 <label for='first-name-two'>
                                     First Name
                                 </label>
@@ -158,7 +156,7 @@
                                     id='first-name-two'
                                 />
                             </div>
-                            <div>
+                            <div class='form-item'>
                                 <label for='last-name-two'>
                                     Last Name
                                 </label>
@@ -169,7 +167,7 @@
                                     id='last-name-two'
                                 />
                             </div>  
-                            <div>
+                            <div class='form-item'>
                                 <label for='email-address-two'>
                                     Email
                                 </label>
@@ -180,7 +178,7 @@
                                     id='email-address-two'
                                 />
                             </div>
-                            <div>
+                            <div class='form-item'>
                                 <label for='phone-number-two'>
                                     Phone
                                 </label>
@@ -191,7 +189,7 @@
                                     id='phone-number-two'
                                 />
                             </div>
-                            <div>
+                            <div class='form-item'>
                                 <label for='home-address-two'>
                                     Service Address
                                 </label>
@@ -202,7 +200,7 @@
                                     id='home-address-two'
                                 />
                             </div>
-                            <div>
+                            <div class='form-item'>
                                 <label for='service-request'>
                                     Brief Description of Issue
                                 </label>
@@ -231,6 +229,13 @@
                     <li>Phone: 303-765-4321</li>
                 </ul>
             </section>
+            <section class='board-contact'>
+                <h2 class='lightgray'>Board</h2>
+                <ul class='lightestgray'>
+                    <li>Email: helloboard@ccb.net</li>
+                    <li>Phone: 303-321-6745</li>
+                </ul>
+            </section>
             <section class='press-contact'>
                 <h2 class='lightgray'>Press</h2>
                 <ul class='lightestgray'>
@@ -242,7 +247,9 @@
     </div>
     </main>
     <footer>
-        Copyright Info
+        <div class='copyright darkgray'>
+            <small>Copyright 2020</small>
+        </div>
     </footer>
     <script>
         function myFunction() {
