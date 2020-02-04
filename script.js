@@ -26,28 +26,27 @@ function displayContactView () {
 }
 
 function eventHandlers () {
-    console.log('it is working')
-    $('#home').click(function() {
+    $('#home, #home-desktop').click(function() {
         console.log('home clicked')
         displayHomeView();
     });
 
-    $('#signup').click(function() {
+    $('#signup, #signup-desktop').click(function() {
         console.log('signup clicked')
         displaySignUpView();
     });
 
-    $('#billing').click(function() {
+    $('#billing, #billing-desktop').click(function() {
         console.log('billing clicked')
         displayBillingView();
     });
 
-    $('#service-desk').click(function() {
+    $('#service-desk, #service-desk-desktop').click(function() {
         console.log('service desk clicked')
         displaySupportView();
     });
 
-    $('#contact').click(function() {
+    $('#contact, #contact-desktop').click(function() {
         console.log('contact clicked')
         displayContactView();
     });
