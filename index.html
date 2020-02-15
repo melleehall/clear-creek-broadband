@@ -6,13 +6,13 @@
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <link rel='stylesheet' type='text/css' href='//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css'>
     <title>Clear Creek Broadband</title>
-    <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">    
     <link rel='stylesheet' type='text/css' href='main.css'>
 </head>
 <body class='flex-col'>
     <nav>
         <div class='topnav-mobile'>
-            <a href='#home' class='darkgray'>Clear Creek Broadband</a>
+            <a href='#home' class='darkgreen'>Clear Creek Broadband</a>
             <div id='myLinks'>
                 <a href='#home' id='home'>Home</a>
                 <a href='#signup' id='signup'>Signup</a>
@@ -38,34 +38,35 @@
     </nav>
     <main>
     <div class='main-container flex-col'>
+        <section class='logo-container'>
+            <img src='ccblogo.png' alt='Clear Creek Broadband logo' class='logo'>
+        </section>
         <section class='landing-view flex-col'>
             <section class='flex-col'>
-                <h1 class='gray'>Clear Creek Broadband</h1>
             <div class='flex-row'>
                 <p class='summary lightestgray'>
-                    Write an intriguing summary about what your company does. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Clear Creek Broadband Company (CCB) was formed by a group of volunteers to bring broadband internet service to eastern Clear Creek County, Colorado. Once the system is implemented, CCB will provide the ongoing administrative and operational support.
                 </p>
-                <div class='image-placeholder darkgray hidden flex-row'> <div>image</div> </div>
+                <div class='image-placeholder darkgreen hidden flex-row'> <div>image</div> </div>
             </div>
             </section>
             <section>
-                <h2 class='lightgray'>Network Status</h2>
+                <h2 class='lightestgray'>Network Status</h2>
                 <div class=flex-row>
-                    <div class='image-placeholder darkgray hidden flex-row'> <div>image</div> </div>
+                    <div class='image-placeholder darkgreen hidden flex-row'> <div>image</div> </div>
                     <p class='lightestgray summary'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </section>
         </section>
         <section class='signup-view'>
             <section>
-                <h1 class='gray'>Hi, Clear Creek Resident! Ready for faster internet?</h1>
+                <h1 class='black-font'>Hi, Clear Creek Resident! Ready for faster internet?</h1>
                 <p class='lightestgray signup-content'>Sign up and pay for service today to save 25% on your first year of service! Not ready to commit? Stay in-the-know by opting in for network status updates.</p>
             </section>
             <section class='signup-form-wrapper'>
-                <h2 class='lightgray'>Signup Form</h2>
+                <h2 class='lightestgray'>Signup Form</h2>
                 <form class='signup-form'>
-                    <fieldset class='personal-info flex-col darkgray'>                        <div class='form-item'>
+                    <fieldset class='personal-info flex-col darkgreen'>                        <div class='form-item'>
                             <label for='first-name-one'>
                                 First Name
                             </label>
@@ -155,10 +156,10 @@
                 </div>
             </section>
             <section>
-                <h2 class='lightgray'>Contact info in case of billing issues</h2>
+                <h2 class='lightestgray'>Contact info in case of billing issues</h2>
                 <ul class='lightestgray'>
                     <li>Name: Clear Creek Smith</li>
-                    <li>Email: hellobilling@ccb.net</li>
+                    <li>Email: support@clearcreekbroadband.com</li>
                     <li>Phone: 303-765-4321</li>
                 </ul>
             </section>
@@ -166,9 +167,28 @@
         <section class='support-view'>
             <section>
                 <h1 class='gray'>Need some help? We're here for you.</h1>
+                <section class='FAQ'>
+                    <h2>FAQ</h2>
+                    <ul class='faq-list'>
+                        <li>
+                            <p class='faq-question'>Question: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</span>
+                            <p class='faq-answer'>Answer: Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                        </li>
+                        <li>
+                            <p class='faq-question'>Question: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum?</span>
+                            <p class='faq-answer'>Answer: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</span>
+                        </li>
+                        <li>
+                            <p class='faq-question'>Question: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</span>
+                            <p class='faq-answer'>Answer: Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                <h2>Still have questions or need assistance? </h2>
                 <form class='zendesk-form'>
-                    <legend class='darkgray'>Service Request Form (Zendesk)</legend>
-                    <fieldset class='personal-info flex-col darkgray'>
+                    <legend class='darkgray'></legend>
+                    <fieldset class='personal-info flex-col darkgreen'>
                             <div class='form-item'>
                                 <label for='first-name-two'>
                                     First Name
@@ -242,29 +262,30 @@
                     A support agent for CCB will contact you within 24 hours. If you need to 
                     provide an update, email Zendesk with your assigned Ticket ID # as the subject.
                 </p>
+                </section>
             </section>
         </section>
         <section class='contact-view'>
             <h1 class='gray'>Contact Us</h1>
             <section class='customer-contact'>
-                <h2 class='lightgray'>Customer Support</h2>
+                <h2 class='lightestgray'>Customer Support</h2>
                 <ul class='lightestgray'>
-                    <li>Email: hellocustomer@ccb.net</li>
-                    <li>Phone: 303-765-4321</li>
+                    <li>Email: support@clearcreekbroadband.com</li>
+                    <li>Phone: Placeholder</li>
                 </ul>
             </section>
             <section class='board-contact'>
-                <h2 class='lightgray'>Board</h2>
+                <h2 class='lightestgray'>Board</h2>
                 <ul class='lightestgray'>
                     <li>Email: helloboard@ccb.net</li>
                     <li>Phone: 303-321-6745</li>
                 </ul>
             </section>
-            <section class='press-contact'>
-                <h2 class='lightgray'>Press</h2>
+            <section class='billing-contact'>
+                <h2 class='lightestgray'>Billing</h2>
                 <ul class='lightestgray'>
-                    <li>Email: hellopress@ccb.net</li>
-                    <li>Phone: 303-123-4567</li>
+                    <li>Email: support@clearcreekbroadband.com</li>
+                    <li>Phone: Placceholder</li>
                 </ul>
             </section>
         </section>

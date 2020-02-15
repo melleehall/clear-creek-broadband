@@ -1,19 +1,26 @@
-html, body, main {
+/* html, body, main {
     background-color: whitesmoke;
     height: 120vh;
-}
+} */
 
 /* Styles Used Throughout */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .flex-col {
     display: flex;
     flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
 }
 
 .hidden {
@@ -23,7 +30,7 @@ html, body, main {
 /* Navigation Specific Styles */
 .topnav-mobile {
     overflow: hidden;
-    background-color: #333;
+    background-color:#065549;
     position: relative;
   }
   
@@ -40,7 +47,7 @@ html, body, main {
   }
 
   .topnav-mobile a.menu {
-    background: black;
+    background: #065549;
     display: block;
     position: absolute;
     right: 0;
@@ -59,7 +66,7 @@ html, body, main {
   .topnav-desktop {
     height: 44px;
     overflow: scroll;
-    background: #323232;
+    background:#065549;
   }
   
   .topnav-desktop ul {
@@ -145,25 +152,52 @@ li {
     margin-left: 20px;
 }
 
+/* Landing/About View */
+
+.logo {
+    width: 300px;
+}
+
+.landing-view,
+.signup-view,
+.billing-view,
+.support-view,
+.contact-view {
+    margin-top: 0px;
+}
+
+
+
+/* Support View */
+.faq-list {
+    text-align: left;
+    padding: 0px;
+}
+
+.faq-list li {
+    margin: 0px;
+}
+
+.faq-question,
+.faq-answer {
+    padding: 0px;
+    font-size: 18px;
+}
+
 /* Color Combinations for Grey Boxes */
 .lightestgray {
     color: black;
-    background-color: lightgray;
+    background-color: #EFEFEF;
+    padding: 40px;
 }
 
-.lightgray {
-    color: white;
-    background-color: #B8B8B8;
+.black-font {
+    color: black;
 }
 
-.gray {
+.darkgreen {
     color: white;
-    background-color:gray;
-}
-
-.darkgray {
-    color: white;
-    background-color:#484848;
+    background-color:#065549;
 }
 
 .image-placeholder {
@@ -175,13 +209,17 @@ li {
 /* Screen = B/w 768px to 1024px */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    main {
-        background-color: lightsalmon;
-    }   
+    .flex-row {
+        justify-content: space-between;
+    }
+    h2 {
+        font-size: 34px;
+    }
     .main-container {
         width: 60%;
     }
     h1 {
+        font-size: 40px;
         padding: 40px;
     }
     .topnav-mobile {
@@ -197,9 +235,12 @@ li {
 */
 
 @media (min-width: 1025px) {
-    main {
-        background-color: yellow;
-    }  
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 34px;
+    }
     .main-container {
         width: 60%;
     }
@@ -212,13 +253,10 @@ li {
     .summary {
         width: 50%;
     }
-    .image-placeholder {
-        display: block;
-    }
     .flex-row {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
     }
     .signup-form-wrapper, 
@@ -230,5 +268,8 @@ li {
     }
     .service-form-content {
         margin-top: 40px;;
+    }
+    .image-placeholder {
+        display: block;
     }
 }
