@@ -166,7 +166,16 @@ li {
     margin-top: 0px;
 }
 
+/* Signup View */
 
+button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 15px;
+}
 
 /* Support View */
 .faq-list {
