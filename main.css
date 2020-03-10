@@ -373,6 +373,10 @@ button {
         width: 40%;
         border-radius: 0px;
     }
+    .network-status-container {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 
