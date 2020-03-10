@@ -279,10 +279,6 @@ button {
 }
 
 /* Support View */
-.FAQ {
-    padding: 40px;
-}
-
 .faq-list {
     text-align: left;
     padding: 0px;
@@ -300,6 +296,11 @@ button {
 
 .faq-question {
     font-weight: 700;
+}
+
+.faq-list li,
+.service-form-content {
+    overflow-wrap: break-word;
 }
 
 /* Color Combinations for Grey Boxes */
@@ -406,7 +407,7 @@ button {
         overflow-wrap: break-word;
     }
     .service-form-content {
-        margin-top: 40px;;
+        margin-top: 40px;
     }
     .image-placeholder {
         display: block;
