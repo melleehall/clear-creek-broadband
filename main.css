@@ -303,6 +303,20 @@ button {
     overflow-wrap: break-word;
 }
 
+.support-btns {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.support-btns a {
+    color: white;
+    background-color: #0e6afd;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
 /* Color Combinations for Grey Boxes */
 .lightestgray {
     color: black;
@@ -327,8 +341,9 @@ button {
 /* Contact */
 
 .contact-info {
-    padding-left: 0px;
-    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 15px;
 }
 
 /* Device = Tablets, Ipads (portrait) */

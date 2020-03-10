@@ -17,7 +17,7 @@
                 <a href='#home' id='home'>Home</a>
                 <a href='#signup' id='signup'>Signup</a>
                 <a href='#billing' id='billing'>Billing</a>
-                <a href='#service-desk' id='service-desk'>FAQ + Service Desk</a>
+                <a href='#service-desk' id='service-desk'>FAQ + Support</a>
                 <a href='#contact' id='contact'>Contact</a>
             </div>
             <a href='javascript:void(0);' class='menu' onclick='myFunction()'>
@@ -30,7 +30,7 @@
                 <li><a href='#home-desktop' id='home-desktop'>Home</a></li>
                 <li><a href='#signup-desktop' id='signup-desktop'>Signup</a></li>
                 <li><a href='#billing-desktop' id='billing-desktop'>Billing</a></li>
-                <li><a href='#service-desk-desktop' id='service-desk-desktop'>FAQ + Service Desk</a></li>
+                <li><a href='#service-desk-desktop' id='service-desk-desktop'>FAQ + Support</a></li>
                 <li><a href='#contact-desktop' id='contact-desktop'>Contact</a></li>
               </ul>
             </div>
@@ -75,19 +75,16 @@
                     <div class='mnt-container'>
                         <img src='mntlaptop.jpg' alt='black and white mountains' class='mnts-img'>
                         <div class='mnt-txt'>
-                            <!-- Enjoy the internet services of today... & tomorrow.  -->
                             <br><br><br><br>
                             ENJOY THE INTERNET SERVICES OF TODAY... & TOMORROW.
                         </div><br><br>
                     </div>
-                    <!-- <img src='mntlaptop.jpg' alt='laptop with mountain background' class='mnt-laptop'> -->
                 </div>
             </section>
         </section>
         <section class='signup-view'>
             <section>
                 <h1 class='black-font'>Hi, Clear Creek Resident! Ready for faster internet?</h1>
-                <!-- <p class='lightestgray signup-content'>Sign up and pay for service today to save 25% on your first year of service! Not ready to commit? Stay in-the-know by opting in for network status updates.</p> -->
                 <p class='lightestgray signup-content'> 
                     <span class='underline'>Limited Time Offer</span><br><br>
                     To begin the build-out of our network and de-risk the reliance on private financing, we are currently offering a Prepaid Plan for $1000 to all households in our service region. <br><br>
@@ -208,8 +205,12 @@
         <section class='support-view'>
             <section>
                 <h1 class='gray'>Need some help? We're here for you.</h1>
+                <div class='support-btns flex-row'>
+                    <a href='#faq' class='signup-btn'>FAQ</a>          
+                    <a href='#email' class='signup-btn'>Contact</a>                
+                </div>
                 <section class='FAQ'>
-                    <h2 class='lightestgray'>FAQ</h2>
+                    <h2 class='lightestgray' id='faq'>FAQ</h2>
                     <ul class='faq-list lightestgray'>
                         <li>
                             <p class='faq-question'>When will the network be built?</p>
@@ -244,9 +245,10 @@
                             <p class='faq-answer'>Until we start construction, we will not have specific answers to this question.</p>
                         </li>
                     </ul>
+                    <img src='glasseslaptopphone.jpg' alt='glasses on top of laptop with smart phone' class='mnts-img'>
                 </section>
                 <section>
-                <h2 class='lightestgray'>Still have questions or need assistance? </h2>
+                <h2 class='lightestgray' id='email'>Still have questions or need assistance? </h2>
                 <!-- <form class='zendesk-form'>
                     <legend class='darkgray'></legend>
                     <fieldset class='personal-info flex-col darkgreen'>
@@ -320,7 +322,7 @@
                         </fieldset>
                 </form> -->
                 <p class='service-form-content lightestgray'>
-                    Email us at support@clearcreekbroadband.com.  We look forward to assisting you!
+                    Email us at <a href="mailto:support@clearcreekbroadband.com">support@clearcreekbroadband.com</a>.  We look forward to assisting you!
                     <!-- Please, be as detailed as possible regarding the issue you are experiencing.
                     A support agent for CCB will contact you within 24 hours. If you need to 
                     provide an update, email Zendesk with your assigned Ticket ID # as the subject. -->
