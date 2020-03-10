@@ -189,19 +189,23 @@ li {
 }
 
 .wires-img,
-.mnts-img,
+.img,
 .mnt-laptop {
     width: 100%;
     height: auto;
     border-radius: 0px;
 }
 
-.mnt-container {
+.img-container {
     position: relative;
     text-align: center;
     font-size: 25px;
     color: white;
     margin-top: 45px;
+}
+
+.glasses-img {
+    margin-top: 30px;
 }
 
 .mnt-txt {
@@ -305,7 +309,7 @@ button {
 
 .support-btns {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .support-btns a {
