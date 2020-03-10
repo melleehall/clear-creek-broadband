@@ -260,11 +260,12 @@ li {
     height: 70%;
     width:728;
     padding:30px;
-    font-weight:bold;
+    font-weight:550;
     text-align:center;
     margin-top: 10px;
     margin-bottom: 10px;
     height: 190px;
+    /* text-transform: uppercase; */
 }
 
 /* Signup View */
