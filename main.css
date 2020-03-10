@@ -6,6 +6,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+h1,
+h2 {
+    font-weight: 400;
+}
+
 .flex-col {
     display: flex;
     flex-direction: column;
@@ -23,6 +28,10 @@
 }
 
 /* Navigation Specific Styles */
+.logo-link {
+    text-align: center;
+}
+
 .mobile-nav {
     height: 45px;
 }
@@ -111,7 +120,7 @@ section {
 }
 
 .main-container {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -167,9 +176,31 @@ li {
     text-align: center;
 }
 
-.signup-btn {
-    background-color: #065549;
+.wires-img,
+.mnts-img,
+.mnt-laptop {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+
+.mnt-container {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
     color: white;
+}
+
+.mnt-txt {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signup-btn {
+    background-color: white;
+    color: black;
     font-size: 20px;
     padding: 12px;
     border-radius: 25px;
@@ -190,11 +221,6 @@ li {
 .support-view,
 .contact-view {
     margin-top: 0px;
-}
-
-.mnts-img {
-    width: 100%;
-    height: auto;
 }
 
 /* Signup View */
@@ -228,6 +254,10 @@ button {
     font-size: 18px;
 }
 
+.faq-question {
+    font-weight: 700;
+}
+
 /* Color Combinations for Grey Boxes */
 .lightestgray {
     color: black;
@@ -247,6 +277,13 @@ button {
 .image-placeholder {
     height: 200px;
     width: 200px;
+}
+
+/* Contact */
+
+.contact-info {
+    padding-left: 0px;
+    font-size: 16px;
 }
 
 /* Device = Tablets, Ipads (portrait) */
@@ -276,7 +313,11 @@ button {
     .topnav-desktop {
         display: block;
     }
+    .mnt-laptop {
+        display: block;
+    }
 }
+
 
 /* Device = Laptops, Desktops */
 /* Screen = 1025px and up
@@ -303,6 +344,7 @@ button {
         display: block;
     }
     .summary {
+        margin-top: 50px;
         width: 50%;
     }
     .flex-row {
@@ -317,6 +359,7 @@ button {
     .service-form-content {
         width: 75%;
         margin: auto;
+        overflow-wrap: break-word;
     }
     .service-form-content {
         margin-top: 40px;;
@@ -324,4 +367,40 @@ button {
     .image-placeholder {
         display: block;
     }
+    .mnt-laptop {
+        display: block;
+        height: 100%; 
+        width: 40%;
+        border-radius: 0px;
+    }
 }
+
+
+/* Experiment */
+   
+    .wires-container:after {
+    content:'';
+    background: url('wires.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:700px;
+    z-index:-1;
+    opacity: 0.3; /* Here is your opacity */
+    border-radius: 0px;
+    }
+    .wires-container {
+    font-size: 20px;
+    color: black;
+    position: relative;
+    height: 70%;
+    width:728;
+    padding:30px;
+    font-weight:bold;
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 190px;
+    }
