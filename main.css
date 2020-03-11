@@ -28,6 +28,10 @@ h2 {
 }
 
 /* Navigation Specific Styles */
+i {
+    font-style: normal;
+}
+
 .logo-link {
     text-align: center;
 }
@@ -144,6 +148,11 @@ p, ul {
     font-size: 20px;
 }
 
+.intro-p {
+    margin: 0px;
+    padding: 0px;
+}
+
 legend {
     width: 100%;
     padding: 10px;
@@ -171,6 +180,7 @@ li {
 .contact-view {
     margin-top: 0px;
 }
+
 
 /* Landing/About View */
 
@@ -247,7 +257,7 @@ li {
     top:0px;
     left: 0px;
     width:100%;
-    height:325px;
+    height:350px;
     z-index:-1;
     opacity: 0.3; 
     border-radius: 0px;
@@ -257,15 +267,24 @@ li {
     font-size: 20px;
     color: black;
     position: relative;
-    height: 70%;
+    height:350px;
+    /* height: 70%; */
     width:728;
     padding:30px;
     font-weight:550;
     text-align:center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     height: 190px;
-    /* text-transform: uppercase; */
+}
+
+.latest {
+    font-weight: 550;
+    height: 60px;
+    border: 2px black solid;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
 }
 
 /* Signup View */
@@ -322,10 +341,16 @@ button {
     font-size: 16px;
 }
 
-/* Color Combinations for Grey Boxes */
+/* Universal Color Combinations */
 .lightestgray {
     color: black;
     background-color: #EFEFEF;
+    padding: 40px;
+}
+
+.midgray {
+    color: black;
+    background-color: #b5b6b7;
     padding: 40px;
 }
 
@@ -336,11 +361,6 @@ button {
 .darkgreen {
     color: white;
     background-color:#065549;
-}
-
-.image-placeholder {
-    height: 200px;
-    width: 200px;
 }
 
 /* Contact */
