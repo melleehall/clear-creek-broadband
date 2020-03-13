@@ -121,7 +121,6 @@ i {
 
 section {
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .main-container {
@@ -463,9 +462,12 @@ button {
         margin: auto;
         overflow-wrap: break-word;
     }
+
     .service-form-content {
         margin-top: 40px;
+        margin-bottom: 30px;
     }
+    
     .image-placeholder {
         display: block;
     }
