@@ -44,44 +44,44 @@ i {
     overflow: hidden;
     background-color:#065549;
     position: relative;
-  }
+}
   
-  .topnav-mobile #myLinks {
+.topnav-mobile #myLinks {
     display: none;
-  }
+}
   
-  .topnav-mobile a {
+.topnav-mobile a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
-  }
+}
 
-  .topnav-mobile a.menu {
+.topnav-mobile a.menu {
     background: #065549;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
-  }
+}
   
-  .topnav-mobile a:hover {
+.topnav-mobile a:hover {
     background-color: #ddd;
     color: black;
-  }
+}
 
-  .topnav-desktop {
+.topnav-desktop {
     height: 100vh;
-  }
+}
   
-  .topnav-desktop {
+.topnav-desktop {
     height: 44px;
     overflow: scroll;
     background:#065549;
-  }
+}
   
-  .topnav-desktop ul {
+.topnav-desktop ul {
     display: flex;
     height: 44px;
     justify-content: space-around;
@@ -89,35 +89,36 @@ i {
     padding: 0;
     margin: 0;
     list-style-type: none;
-  }
+}
   
-  .topnav-desktop li {
+.topnav-desktop li {
       margin-left: 0px;
-  }
+}
   
-  .topnav-desktop a {
+.topnav-desktop a {
     display: block;
     color: white;
     font-size: 15px;
     font-weight: lighter;
     text-decoration: none;
     transition: 0.3s;
-  }
+}
   
-  .topnav-desktop a:hover {
+.topnav-desktop a:hover {
     color: #B8B8B8;
-  }
+}
 
-  .topnav-desktop-inner {
-        max-width: 980px;
-        margin: 0 auto;
-  }
+.topnav-desktop-inner {
+    max-width: 980px;
+    margin: 0 auto;
+}
 
 .topnav-desktop {
     display: none;
 }
   
 /* Main Specific Styles */
+
 section {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -144,7 +145,6 @@ h2 {
 
 p, ul {
     margin-top: 20px;
-    padding: 15px;
     font-size: 20px;
 }
 
@@ -167,10 +167,6 @@ legend {
 li {
     list-style: none;
     margin-left: 20px;
-}
-
-.underline {
-    text-decoration: underline;
 }
 
 .landing-view,
@@ -280,7 +276,6 @@ li {
     font-weight: 550;
     height: 60px;
     border: 2px black solid;
-    /* width: 60%; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -301,7 +296,24 @@ button {
     display: none;
 }
 
+.signup-subhead {
+    text-decoration: underline;
+    text-align: left;
+    padding: 0px;
+    font-size: 22px;
+}
+
+.signup-view p,
+.signup-view ul {
+    margin-top: 0px;
+}
+
+.savings {
+    font-weight: 700;
+}
+
 /* Support View */
+
 .faq-list {
     text-align: left;
     padding: 0px;
@@ -374,11 +386,10 @@ button {
 /* Screen = under 355px */
 
 @media (max-width: 355px) {
-    .wires-container {
-        font-size: 19px;
+    .wires-container p {
+        font-size: 18px;
     }
 }
-
 
 /* Device = Tablets, Ipads (portrait) */
 /* Screen = B/w 768px to 1024px */

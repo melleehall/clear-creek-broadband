@@ -39,25 +39,29 @@
     <main>
     <div class='main-container flex-col'>
         <section class='logo-container'>
-            <a href='#home-desktop' id='home-desktop' class='logo-link'><img src='ccblogo.png' alt='Clear Creek Broadband logo' class='logo'></a>
+            <a href='#home-desktop' id='home-desktop' class='logo-link' role='button' aria-pressed='false'>
+                <img src='ccblogo.png' alt='Clear Creek Broadband logo' class='logo'>
+            </a>
         </section>
         <section class='landing-view flex-col'>
             <section class='flex-col'>
             <div class='flex-row'>
-                <!-- <h2 class='midgray'>Latest News</h2> -->
                     <div class='wires-container'>
-                        <p class='intro-p'>
+                        <section class='intro-p'>
                             <h2 class='latest'>Latest News</h2>
-                            Friends and neighbors, high-speed internet is coming to Clear Creek County. <br><br>
-                            Our prepaid offer expires April 15, 2020.  Click below to learn how you can benefit from this limited time offer. <br><br><br>
-                            <a href='#signup-desktop' id='signup-desktop' class='signup-btn'>Sign Me Up</a>                
-                    </p>
+                            <p>
+                                Friends and neighbors, high-speed internet is coming to Clear Creek County. <br><br>
+                                Our prepaid offer expires April 15, 2020.  Click below to learn how you can benefit from this limited time offer. <br><br><br>
+                            </p>
+                            <a href='#signup-desktop' id='signup-desktop' class='signup-btn' role='button' aria-pressed='false'>Sign Me Up</a>                
+                        </section>
                     </div>
-                    <br>    <br>    <br>    <br> <br>    <br>    
+                    <br><br><br><br><br><br>      
                     <h2 class='lightestgray who-are-we'>Who are we?</h2>
                 <p class='summary lightestgray'>
                     Clear Creek Broadband (CCB) is a local internet service company dedicated to providing our neighbors in eastern Clear Creek County with access to a highspeed broadband connection. <br><br> 
-                    Our fixed wireless broadband network will provide the speeds and local support to make each of our homes ready for the internet services of today and tomorrow. </p>
+                    Our fixed wireless broadband network will provide the speeds and local support to make each of our homes ready for the internet services of today and tomorrow. 
+                </p>
             </div>
             </section>
             <section>
@@ -77,7 +81,7 @@
                         We will update this website frequently to keep everyone aware of progress and updates.
                     </p>
                     <div class='img-container'>
-                        <img src='mntlaptop.jpg' alt='black and white mountains' class='img'>
+                        <img src='mntlaptop.jpg' alt='laptop with mountain background image' class='img'>
                         <div class='mnt-txt'>
                             <br><br><br><br>
                             ENJOY THE INTERNET SERVICES OF TODAY... & TOMORROW.
@@ -89,114 +93,35 @@
         <section class='signup-view'>
             <section>
                 <h1 class='black-font'>Hi, Clear Creek Resident! Ready for faster internet?</h1>
-                <p class='lightestgray signup-content'> 
-                    <span class='underline'>Limited Time Offer [Expires April 15, 2020]</span><br><br>
+                <section class='lightestgray'>
+                    <h2 class='signup-subhead'>Limited Time Offer [Expires April 15, 2020]</h2><br><br>
+                    <p class='signup-content'> 
                         To begin the build-out of our network and de-risk the reliance on private financing, we are currently offering a Prepaid Plan for $1000 to all households in our service region. <br><br>
                         To take advantage of this limited time offer, please mail a check to the following address: <br><br>
                         Clear Creek Broadband, LLC<br>
                         456 Crystal Ridge Road<br>
                         Evergreen, CO
-                    <ul class='lightestgray'> 
-                        <span class='underline'>Broadband Service Benefits</span><br><br>
+                    </p>
+                </section>
+                <section class='lightestgray'>
+                    <h2 class='signup-subhead'>Broadband Service Benefits</h2><br><br>
+                    <ul> 
                         <li>(1) Prepaid service for 12 months = $840 Value</li>
                         <li>(2) Equipment needed for each household = $300 Value</li>
                         <li>(3) Installation = $125 Value</li>
-                        <li>  <b>Total Savings: $256 </b></li><br>
+                        <li class='savings'>  Total Savings: $256 </li><br>
                         <li>Your prepaid deposit will be treated as a credit against your account and be drawn against your service payments from the prepaid credit (excluding tax).</li>
                     </ul>
-                    <ul class='lightestgray'> 
-                        <span class='underline'>Additional Benefits</span><br><br>
+                </section>
+                <section class='lightestgray'>
+                    <h2 class='signup-subhead'>Additional Benefits</h2><br><br>
+                    <ul> 
                         <li>(A) Jump-start the network build-out</li>
                         <li>(B) De-risk reliance on private investment</li>
                         <li>(C) Increase property value of every property served</li>
                     </ul>
-                </p>
+                </section>
                 <img src='childwithtablet.jpg' alt='child with tablet' class='img'>
-            </section>
-            <section class='signup-form-wrapper'>
-                <h2 class='lightestgray'>Signup Form</h2>
-                <form class='signup-form'>
-                    <fieldset class='personal-info flex-col darkgreen'>                        <div class='form-item'>
-                            <label for='first-name-one'>
-                                First Name
-                            </label>
-                            <input 
-                                placeholder='First Name'
-                                type='text'
-                                name='first-name-one'
-                                id='first-name-one'
-                            />
-                        </div>
-                        <div class='form-item'>
-                            <label for='last-name-one'>
-                                Last Name
-                            </label>
-                            <input 
-                                placeholder='Last Name'
-                                type='text'
-                                name='last-name-one'
-                                id='last-name-one'
-                            />
-                        </div>  
-                        <div class='form-item'>
-                            <label for='email-address-one'>
-                                Email
-                            </label>
-                            <input 
-                                placeholder='abc123@email.com'
-                                type='email'
-                                name='email-address-one'
-                                id='email-address-one'
-                            />
-                        </div>
-                        <div class='form-item'>
-                            <label for='phone-number-one'>
-                                Phone
-                            </label>
-                            <input 
-                                placeholder='(303) 801-2854'
-                                type='tel'
-                                name='phone-number-one'
-                                id='phone-number-one'
-                            />
-                        </div>
-                        <div class='form-item'>
-                            <label for='home-address-one'>
-                                Service Address
-                            </label>
-                            <input 
-                                placeholder='Clear Creek, CO'
-                                type='tel'
-                                name='home-address-one'
-                                id='home-address-one'
-                            />
-                        </div>
-                    </fieldset>
-                    <fieldset class='user-selections flex-col darkgray'>
-                        <div class='form-item'>
-                            <input 
-                                type='checkbox'
-                                name='early-subscriber'
-                                id='early-subscriber'
-                            />
-                            <label for='early-subscriber'>
-                                Option to be an Early Subscriber
-                            </label>
-                        </div>
-                        <div class='form-item'>
-                            <input 
-                                type='checkbox'
-                                name='updates'
-                                id='updates'
-                            />
-                            <label for='updates'>
-                                Option to opt in for email updates
-                            </label>
-                        </div>
-                        <button type='submit'>SUBMIT</button>
-                    </fieldset>
-                    
-                </form>
             </section>
         </section>
         <section class='billing-view'>
@@ -211,8 +136,8 @@
             <section>
                 <h1 class='gray'>Need some help? We're here for you.</h1>
                 <div class='support-btns flex-row'>
-                    <a href='#faq' class='signup-btn'>FAQ</a>          
-                    <a href='#email' class='signup-btn'>Contact</a>                
+                    <a href='#faq' class='signup-btn' role='button' aria-pressed='false'>FAQ</a>          
+                    <a href='#email' class='signup-btn' role='button' aria-pressed='false'>Contact</a>                
                 </div>
                 <section class='FAQ'>
                     <h2 class='lightestgray' id='faq'>FAQ</h2>
@@ -225,7 +150,7 @@
                             <p class='faq-question'>How much will service cost?</p>
                             <p class='faq-answer'>Currently, you can receive a special discount for your first year of service by prepaying.  
                                 Click <a href='#signup-desktop' id='signup-desktop' >HERE</a> to visit our "Signup" page for details. 
-                                Outside of this promotional period, service will cost $70.00 per month.
+                                Outside of this promotional period, service will cost $70.00 per month plus taxes and applicable FCC-related fees.
                             </p>
                         </li>
                         <li>
@@ -256,83 +181,9 @@
                 </section>
                 <section>
                 <h2 class='lightestgray' id='email'>Still have questions or need assistance? </h2>
-                <!-- <form class='zendesk-form'>
-                    <legend class='darkgray'></legend>
-                    <fieldset class='personal-info flex-col darkgreen'>
-                            <div class='form-item'>
-                                <label for='first-name-two'>
-                                    First Name
-                                </label>
-                                <input 
-                                    placeholder='First Name'
-                                    type='text'
-                                    name='first-name-two'
-                                    id='first-name-two'
-                                />
-                            </div>
-                            <div class='form-item'>
-                                <label for='last-name-two'>
-                                    Last Name
-                                </label>
-                                <input 
-                                    placeholder='Last Name'
-                                    type='text'
-                                    name='last-name-two'
-                                    id='last-name-two'
-                                />
-                            </div>  
-                            <div class='form-item'>
-                                <label for='email-address-two'>
-                                    Email
-                                </label>
-                                <input 
-                                    placeholder='abc123@email.com'
-                                    type='email'
-                                    name='email-address-two'
-                                    id='email-address-two'
-                                />
-                            </div>
-                            <div class='form-item'>
-                                <label for='phone-number-two'>
-                                    Phone
-                                </label>
-                                <input 
-                                    placeholder='(303) 801-2854'
-                                    type='tel'
-                                    name='phone-number-two'
-                                    id='phone-number-two'
-                                />
-                            </div>
-                            <div class='form-item'>
-                                <label for='home-address-two'>
-                                    Service Address
-                                </label>
-                                <input 
-                                    placeholder='Clear Creek, CO'
-                                    type='tel'
-                                    name='home-address-two'
-                                    id='home-address-two'
-                                />
-                            </div>
-                            <div class='form-item'>
-                                <label for='service-request'>
-                                    Brief Description of Issue
-                                </label>
-                                <input 
-                                    placeholder='Experiencing outage'
-                                    type='text'
-                                    name='service-request'
-                                    id='service-request'
-                                />
-                            </div>
-                            <button type='submit'>SUBMIT</button>
-                        </fieldset>
-                </form> -->
                 <p class='service-form-content lightestgray'>
-                    Email us at <a href="mailto:support@clearcreekbroadband.com">support@clearcreekbroadband.com</a>.  We look forward to assisting you!
-                    <!-- Please, be as detailed as possible regarding the issue you are experiencing.
-                    A support agent for CCB will contact you within 24 hours. If you need to 
-                    provide an update, email Zendesk with your assigned Ticket ID # as the subject. -->
+                    Email us at <a href="mailto:support@clearcreekbroadband.com">support@clearcreekbroadband.com</a>.  
+                    We look forward to assisting you!
                 </p>
                 </section>
             </section>
@@ -360,7 +211,7 @@
             x.style.display = 'block';
           }
         }
-        </script>
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <script src="script.js"></script>
